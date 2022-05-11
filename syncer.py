@@ -25,7 +25,7 @@ def main(argv):
     parser.add_argument('--debug', action='store_true',
                         help='Run in "debug" mode')
     parser.add_argument('--config', action='store',
-                        help='Specify config file')
+                        help='Specify config file', required=True)
     args = parser.parse_args(argv)
     config = yaml.safe_load(open(args.config))
 
