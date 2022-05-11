@@ -1,1 +1,2 @@
 asfpy~=0.37
+python-dotenv~=0.20.0
