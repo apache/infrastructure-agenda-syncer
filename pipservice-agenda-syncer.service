@@ -1,0 +1,13 @@
+[Unit]
+Description=ASF Agenda Syncer Service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/agenda-syncer
+ExecStart=/usr/local/bin/pipenv run python3 sync.py
+Restart=always
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target
