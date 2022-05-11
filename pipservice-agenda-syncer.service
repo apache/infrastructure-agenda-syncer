@@ -4,7 +4,7 @@ Description=ASF Agenda Syncer Service
 [Service]
 Type=simple
 WorkingDirectory=/opt/agenda-syncer
-ExecStart=/usr/local/bin/pipenv run python3 sync.py
+ExecStart=/usr/local/bin/pipenv run python3 syncer.py --config /opt/agenda-syncer/syncer.yaml
 Restart=always
 User=www-data
 Group=www-data
